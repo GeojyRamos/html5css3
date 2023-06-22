@@ -27,6 +27,14 @@ body{
     background-color: #dcdcdc;
 }
 
+/* CSS FLEXBOX serve para psicionar os itens de forma mais fluidas utilisando containers */
+.Flex{
+    display: flex;
+    justify-content:space-between;
+    background-color: #a9a9a9;
+
+}
+
 /* Icone que leva ao topo do site */
 #topo{
     position: fixed;
@@ -34,7 +42,14 @@ body{
     bottom: 10px;
 }
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
+/* Cabeçalho */
+header{
+   height: 60px; 
+}
+#logo img{
+    width: 128px;
+    height: 128px;
+}
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){
     body{
@@ -75,4 +90,14 @@ body{
     .Container{
         max-width: 1140px;
     }
+    /* Cabeçalho para PC */
+    header{
+        height: 120px;
+    }
+    #logo img{
+        width: 189px;
+        height: 189px;
+        margin-top: 30px;
+    }
+
 }
