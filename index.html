@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +11,29 @@
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Cabeçalho -->
-    <header>        
+    <header>
         <div class="Container">
+            <div id="logo">
+                <!-- Atributo alt serve para descrever a imagem -->
+                <img src="img/logo.png" alt="hal 9000"\>
+            </div>
+
+            <!-- Criando o menu retratil com checkbox -->
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check">&#x268c;</label>
+                <!-- Sempre que for ser inserido um codigo inicode deve seguir o seguinte padrão = &#x"codigounicode"; -->
+                <!-- Criando lista com itens do menu -->
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Conteúdo</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -24,7 +44,7 @@
             <h2> Você faz. Você vê. Você Aprente </h2>
         </div>
     </main>
-    
+
     <!-- Sobre -->
     <section>
         <div class="Container">
@@ -68,4 +88,5 @@
 
     </footer>
 </body>
+
 </html>
