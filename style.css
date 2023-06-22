@@ -27,6 +27,12 @@ body{
     background-color: #dcdcdc;
 }
 
+/* Icone que leva ao topo do site */
+#topo{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
