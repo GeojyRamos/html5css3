@@ -179,6 +179,27 @@ main h2 {
   border: 0;
 }
 
+/* wireframe */
+#wireframe{
+    padding: 50px 0px;
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#textoWire{
+    color: #fff;
+    padding: 0px 10px;
+}
+
+#textoWire h2{
+    margin-bottom: 10px;
+
+}
+#textoWire p{
+   margin-bottom: 40px; 
+}
+
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
   /* Layout */
