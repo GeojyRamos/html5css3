@@ -341,7 +341,7 @@ main h2 {
   }
   #qrcode {
     display: inline;
-    visibility: visible
+    visibility: visible;
   }
   #qrcode img {
     width: 225px;
