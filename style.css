@@ -337,9 +337,11 @@ main h2 {
 
   #textoWire span {
     display: inline;
+    visibility: visible;
   }
   #qrcode {
     display: inline;
+    visibility: visible
   }
   #qrcode img {
     width: 225px;
