@@ -6,310 +6,296 @@
 
 /* Importação google fontes */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 /* CSS Reset */
 * {
-    margin: 0;
-    border: 0;
-    padding: 0;
+  margin: 0;
+  border: 0;
+  padding: 0;
 }
 
-
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    /* 1 em = 16px mas quando é renderizado não é distorcido */
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  /* 1 em = 16px mas quando é renderizado não é distorcido */
 }
 
 /* Layout */
 .Container {
-    margin: 0 auto;
-
+  margin: 0 auto;
 }
 
 /* CSS FLEXBOX serve para psicionar os itens de forma mais fluidas utilisando containers */
 .Flex {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 /* FLEX para colocar os objetos centralizados */
 .Flex2 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /* FLEX para colocar os objetos  */
-.Flex3{
-    display: flex;
-    flex-direction: column;
+.Flex3 {
+  display: flex;
+  flex-direction: column;
 }
 
-
 .Botao {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.3em;
-    font-weight: 700;
-    background-color: #c00000;
-    padding: 10px 40px;
-    border: 2px solid #fff;
-    border-radius: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 700;
+  background-color: #c00000;
+  padding: 10px 40px;
+  border: 2px solid #fff;
+  border-radius: 25px;
 }
 
 /* Icone que leva ao topo do site */
 #topo {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
 }
 
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* Cabeçalho */
 header {
-    height: 60px;
+  height: 60px;
 }
 
 #logo img {
-    width: 128px;
-    height: 128px;
+  width: 128px;
+  height: 128px;
 }
 
 #check {
-    display: none;
+  display: none;
 }
 
 label {
-    font-size: 3em;
-    position: fixed;
-    top: 5px;
-    right: 15px;
-    color: rgba(0,0,0,0.5);
+  font-size: 3em;
+  position: fixed;
+  top: 5px;
+  right: 15px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
-    list-style: none;
-    background-color: #343538;
-    height: 100vh;
-    /*100vh define a altura total da tela independente do tamanho da tela*/
-    position: fixed;
-    top: 60px;
-    right: -100%;
-    width: 100%;
-    transition: all 0.5s;
+  list-style: none;
+  background-color: #343538;
+  height: 100vh;
+  /*100vh define a altura total da tela independente do tamanho da tela*/
+  position: fixed;
+  top: 60px;
+  right: -100%;
+  width: 100%;
+  transition: all 0.5s;
 }
 
 /* Para mostrar e esconder o menu nos smartphones ou tablets */
-#check:checked~ul {
-    right: 0;
+#check:checked ~ ul {
+  right: 0;
 }
 
 nav ul li {
-    padding: 20px;
-    border-bottom: 1px solid #a9a9;
+  padding: 20px;
+  border-bottom: 1px solid #a9a9;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Destaque */
 main {
-    height: 75vh;
-    background: url(img/banner.jpg);
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  height: 75vh;
+  background: url(img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 main h1 {
-    font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 main h2 {
-    font-size: 1em;
-    margin: 20px 0px 50px 0px;
+  font-size: 1em;
+  margin: 20px 0px 50px 0px;
 }
 
 /* Sobre */
 #sobre {
-    padding: 50px 0px;
-    background: url(img/background.png);
-    background-position: center;
-    background-size: cover;
+  padding: 50px 0px;
+  background: url(img/background.png);
+  background-position: center;
+  background-size: cover;
 }
 
 #destaqueSobre {
-    display: none;
+  display: none;
 }
 
 #textoSobre {
-    color: #fff;
-    padding: 0px 10px;
+  color: #fff;
+  padding: 0px 10px;
 }
 
 #textoSobre h2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .TopicosSobre {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .TopicosSobre img {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 /* One Page */
-#onepage{
-    padding: 50px 10px;
-
+#onepage {
+  padding: 50px 10px;
 }
-#onepage h2{
-    margin-bottom: 10px;
-
+#onepage h2 {
+  margin-bottom: 10px;
 }
 
-#onepage p{
-    margin-bottom: 25px;
+#onepage p {
+  margin-bottom: 25px;
 }
 
-#video iframe{
-    width: 340px;
-    height: 191px;
-    border: 0;
+#video iframe {
+  width: 340px;
+  height: 191px;
+  border: 0;
 }
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
+  /* Layout */
+  .Container {
+    max-width: 540px;
+  }
 
-    /* Layout */
-    .Container {
-        max-width: 540px;
-    }
+  /* Destaque */
+  main h1,
+  main h1 {
+    text-shadow: #000 0.05em 0.05em 0.05em;
+  }
 
-    /* Destaque */
-    main h1,
-    main h1 {
-        text-shadow: #000 0.05em 0.05em 0.05em;
-    }
-
-    /* One Page */
-    #video iframe{
-        width: 560px;
-        height: 315px;
-    }
-
-
+  /* One Page */
+  #video iframe {
+    width: 560px;
+    height: 315px;
+  }
 }
 
 /* Tabletes Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
+  /* Layout */
+  .Container {
+    max-width: 720px;
+  }
 
-    /* Layout */
-    .Container {
-        max-width: 720px;
-    }
+  /* Destaque */
+  main {
+    height: 45vh;
+  }
 
-    /* Destaque */
-    main {
-        height: 45vh;
-    }
+  main h1 {
+    font-size: 5.5em;
+  }
 
-    main h1 {
-        font-size: 5.5em;
-    }
-
-    main h2 {
-        font-size: 2em;
-    }
-
-
+  main h2 {
+    font-size: 2em;
+  }
 }
 
 /* Tabletes Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
+  /* Layout */
+  .Container {
+    max-width: 960px;
+  }
 
-    /* Layout */
-    .Container {
-        max-width: 960px;
-    }
-
-    /* Destaque */
-    main {
-        height: 70vh;
-    }
+  /* Destaque */
+  main {
+    height: 70vh;
+  }
 }
 
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
+  /* layaout */
+  .Container {
+    max-width: 1140px;
+  }
 
-    /* layaout */
-    .Container {
-        max-width: 1140px;
-    }
+  /* Cabeçalho para PC */
+  header {
+    height: 120px;
+  }
 
-    /* Cabeçalho para PC */
-    header {
-        height: 120px;
-    }
+  #logo img {
+    width: 189px;
+    height: 189px;
+    margin-top: 30px;
+  }
 
-    #logo img {
-        width: 189px;
-        height: 189px;
-        margin-top: 30px;
-    }
+  label {
+    display: none;
+  }
 
-    label {
-        display: none;
-    }
+  nav ul {
+    position: static;
+    height: auto;
+    background-color: transparent;
+    margin-top: 50px;
+  }
 
-    nav ul {
-        position: static;
-        height: auto;
-        background-color: transparent;
-        margin-top: 50px;
-    }
+  nav ul li {
+    float: left;
+    border: 0;
+  }
 
-    nav ul li {
-        float: left;
-        border: 0;
-    }
+  nav ul li a {
+    color: #343538;
+  }
 
-    nav ul li a {
-        color: #343538;
-    }
+  nav ul li a:hover {
+    color: #c00000;
+  }
 
-    nav ul li a:hover {
-        color: #c00000;
-    }
+  /* Sobre */
 
-    /* Sobre */
+  /* Efeito de rolagem paralax */
+  #sobre {
+    background-attachment: fixed;
+  }
 
-    /* Efeito de rolagem paralax */
-    #sobre {
-        background-attachment: fixed;
-    }
+  #destaqueSobre {
+    display: inline;
+  }
 
-    #destaqueSobre {
-        display: inline;
-    }
+  /* Arredondar a imagem e colocar um espaço entre ela e o texto */
+  #destaqueSobre img {
+    border-radius: 50%;
+    margin-right: 50px;
+  }
 
-    /* Arredondar a imagem e colocar um espaço entre ela e o texto */
-    #destaqueSobre img {
-        border-radius: 50%;
-        margin-right: 50px;
-    }
-
-    /* One page */
-    /* Colocando o FLEX3 em linha para computadores */
-    .Flex3{
-        flex-direction: row;
-        align-items: center;
-    }
-
+  /* One page */
+  /* Colocando o FLEX3 em linha para computadores */
+  .Flex3 {
+    flex-direction: row;
+    align-items: center;
+  }
 }
