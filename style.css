@@ -43,6 +43,11 @@ body {
   flex-direction: column;
 }
 
+.Flex4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Cria espaço uniforme entre os elementos  */
+}
 
 .Botao {
   text-decoration: none;
@@ -60,6 +65,35 @@ body {
   position: fixed;
   right: 10px;
   bottom: 10px;
+}
+
+/* Cartoes */
+
+.Card {
+  margin-top: 25px;
+  width: 338px;
+  height: 520px;
+  background-color: #e8e8e8;
+  border: 1px solid #a1a1a1;
+  border-radius: 25px;
+  text-align: center;
+}
+.Card img {
+  border-radius: 25px 25px 0px 0px;
+}
+
+.Card h3 {
+  margin-top: 15px;
+}
+
+.Card p {
+  text-align: left;
+  color: #434343;
+  padding: 10px 30px 50px 30px;
+}
+.Card a {
+  padding: 10px 100px;
+  border: 0;
 }
 
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -144,7 +178,6 @@ main h2 {
 
 #destaqueSobre {
   display: none;
-  
 }
 
 #textoSobre {
@@ -208,6 +241,28 @@ main h2 {
 #qrcode {
   display: none;
   visibility: hidden;
+}
+
+/* Conteudo */
+#conteudo {
+  padding: 50px 0px;
+}
+
+#conteudo h2 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+#todos {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#todos a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.25em;
 }
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -301,7 +356,7 @@ main h2 {
   nav ul li a {
     color: #343538;
   }
-
+  /* Efeito para mudar de cor quando passa o mouse */
   nav ul li a:hover {
     color: #c00000;
   }
@@ -348,4 +403,9 @@ main h2 {
     height: 225px;
   }
 
+  /* Conteudo */
+
+  #todos a:hover {
+    color: #c00000;
+  }
 }
