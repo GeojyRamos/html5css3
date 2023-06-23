@@ -31,7 +31,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-/* FLEX para colocar os objetos centralizados */
+/* FLEX para colocar os objetos alinhados e centralizados */
 .Flex2 {
   display: flex;
   align-items: center;
@@ -42,6 +42,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 
 .Botao {
   text-decoration: none;
@@ -180,24 +181,30 @@ main h2 {
 }
 
 /* wireframe */
-#wireframe{
-    padding: 50px 0px;
-    background-image: url(img/background.png);
-    background-size: cover;
-    background-position: center;
+#wireframe {
+  padding: 50px 0px;
+  background-image: url(img/background.png);
+  background-size: cover;
+  background-position: center;
 }
 
-#textoWire{
-    color: #fff;
-    padding: 0px 10px;
+#textoWire {
+  color: #fff;
+  padding: 0px 10px;
 }
 
-#textoWire h2{
-    margin-bottom: 10px;
-
+#textoWire h2 {
+  margin-bottom: 10px;
 }
-#textoWire p{
-   margin-bottom: 40px; 
+#textoWire p {
+  margin-bottom: 40px;
+}
+
+#textoWire span {
+  display: none;
+}
+#qrcode {
+  display: none;
 }
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -319,4 +326,21 @@ main h2 {
     flex-direction: row;
     align-items: center;
   }
+  /* wireframe */
+  /* Fixando a imagem de fundo */
+  #wireframe {
+    background-attachment: fixed;
+  }
+
+  #textoWire span {
+    display: inline;
+  }
+  #qrcode {
+    display: inline;
+  }
+  #qrcode img {
+    width: 225px;
+    height: 225px;
+  }
+
 }
