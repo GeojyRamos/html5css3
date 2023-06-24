@@ -24,16 +24,23 @@
         </div>
 
         <!-- Criando o menu retratil com checkbox -->
+
+        <script>
+          function check() {
+            var checkbox = document.getElementById("check");
+            checkbox.checked = false;
+          }
+        </script>
         <nav>
           <input type="checkbox" id="check" />
           <label for="check">&#x268c;</label>
           <!-- Sempre que for ser inserido um codigo inicode deve seguir o seguinte padrão = &#x"codigounicode"; -->
           <!-- Criando lista com itens do menu -->
           <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#conteudo">Conteúdo</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#inicio" onclick="check()">Inicio</a></li>
+            <li><a href="#sobre" onclick="check()">Sobre</a></li>
+            <li><a href="#conteudo" onclick="check()">Conteúdo</a></li>
+            <li><a href="#contato" onclick="check()">Contato</a></li>
           </ul>
         </nav>
       </div>
@@ -183,8 +190,8 @@
 
     <!-- Rodepé -->
     <address>
-      <div class="Container">
-        <div class="contato">
+      <div class="Container Flex6">
+        <div id="contato">
           <!-- Atributo title mostra o testo assim que o curssor é colocado em cima -->
           <a
             href="https://api.whatsapp.com/send?phone=5562992356420"
@@ -205,7 +212,7 @@
             <p>geojy_2012@hotmail.com</p>
           </a>
         </div>
-        <div class="endereco">
+        <div id="endereco">
           <a href="https://goo.gl/maps/6iWKiLpDzLKiAS116" target="_blank"
             ><img src="img/mapa.png" alt="Mapa" id="iconeMapa"
           /></a>
@@ -214,16 +221,41 @@
           <p>Complemento: Qd 03, Lt 19</p>
           <p>Bairro: Residencial Luiz Moreira de Melo</p>
           <p>Cidade: Caturaí-GO</p>
-          <p id="dados"></p>
+          <p id="dados">&#128064; Endereço e dados de contato Ficticios</p>
         </div>
-        <div class="googleMaps"></div>
+        <div id="googleMaps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d404.20927385156284!2d-49.49697769080751!3d-16.445255890266363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e0!4m3!3m2!1d-16.4454085!2d-49.4971348!4m3!3m2!1d-16.4453157!2d-49.497085!5e1!3m2!1spt-BR!2sbr!4v1687637215006!5m2!1spt-BR!2sbr"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
-      ner
+
     </address>
     <footer>
-      <div class="Container">
-        <div id="copyright"></div>
-        <div id="social"></div>
+      <div class="Container Flex5">
+        <div id="copyright">
+          <p>&#169; Geojy Ramos Lopes da Costa</p>
+        </div>
+        <div id="social">
+          <a href="https://www.youtube.com/channel/UC_dHKbRu0LQA04B7syBFTZQ" target="_blank">
+            <img src="img/youtube.png" alt="YouTube" />
+          </a>
+          <a href="https://www.linkedin.com/in/geojy-ramos-a8aab2156/" target="_blank">
+            <img src="img/linkedin.png" alt="linkedin" />
+          </a>
+          <a href="https://www.facebook.com/geojy.ramos" target="_blank">
+            <img src="img/facebook.png" alt="facebook" />
+          </a>
+          <a href="https://www.instagram.com/geojy_ramos/" target="_blank">
+            <img src="img/instagram.png" alt="instagram" />
+          </a>
+        </div>
       </div>
     </footer>
     <!-- Criando um icone para boltar ao topo da pagina -->
